@@ -1,4 +1,4 @@
-#README
+# README
 
 REPEATFOCUS is  a k-mer filtering–based pipeline designed to enrich repeat-containing reads prior to assembly.
 
