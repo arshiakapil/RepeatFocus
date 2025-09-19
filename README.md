@@ -19,3 +19,5 @@ The resulting assemblies are evaluated using standard assembly quality metrics, 
 5. Genome Assembly
 6. Assembly Metrics
 7. Validation Metrics
+
+# Prerequisites
