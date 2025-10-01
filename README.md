@@ -17,4 +17,4 @@ The resulting assemblies are evaluated using standard assembly quality metrics, 
 3. Evaluation: Assembly and Validation metrics are calculated to assess the accuracy of the assembly and the recovery of repetitive content.
 
 # Prerequisites and Setup
-This workflow requires the installation of several software packages. We have created a configuration file(yml) that can be activated using conda. Since Nextflow is the tool of choice for 
+This workflow requires the installation of several software packages. We have created a configuration file(yml) that can be activated using conda. Since Nextflow has been selected as the workflow management system, its installation is required prior to running the RepeatFocus pipeline.
