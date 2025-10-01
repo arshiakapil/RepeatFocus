@@ -9,7 +9,7 @@ The resulting assemblies are evaluated using standard assembly quality metrics, 
 
 <img width="960" height="540" alt="figure" src="https://github.com/user-attachments/assets/7b8b14d4-bbb0-4c19-ac4f-36ebcf04e1ea" />
 
-> ***Figure 1:*** This figure outlines the RepeatFocus pipeline for assembling repetitive regions from low-coverage long-read sequencing data. (1) Raw long reads are processed with Meryl to generate a k-mer frequency database. (2) A statistical threshold is calculated to identify high-frequency, potentially repetitive k-mers. (3) A filtered k-mer database is created containing only k-mers above this threshold. (4) Reads containing these, more than 50% repetitive k-mers are extracted from the original dataset. (5) The extracted reads are assembled using Hifiasm. (6) Assembly quality is assessed using metrics that evaluate continuity, correctness, and completeness, with a focus on the recovery of repetitive sequences.
+/> ***Figure 1:*** This figure outlines the RepeatFocus pipeline for assembling repetitive regions from low-coverage long-read sequencing data. (1) Raw long reads are processed with Meryl to generate a k-mer frequency database. (2) A statistical threshold is calculated to identify high-frequency, potentially repetitive k-mers. (3) A filtered k-mer database is created containing only k-mers above this threshold. (4) Reads containing these, more than 50% repetitive k-mers are extracted from the original dataset. (5) The extracted reads are assembled using Hifiasm. (6) Assembly quality is assessed using metrics that evaluate continuity, correctness, and completeness, with a focus on the recovery of repetitive sequences.
 
 # WorkFlow
 1. PreProcessing and Optimization: Create a kmer spectra to identify repetitive kmers which are used to filter the reads based on repetitivness used for assembly.
@@ -17,3 +17,4 @@ The resulting assemblies are evaluated using standard assembly quality metrics, 
 3. Evaluation: Assembly and Validation metrics are calculated to assess the accuracy of the assembly and the recovery of repetitive content.
 
 # Prerequisites and Setup
+This workflow requires the installation of several software packages. We have created a configuration file(yml) that can be activated using conda. Since Nextflow is the tool of choice for 
