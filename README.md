@@ -21,3 +21,10 @@ This workflow requires the installation of several software packages. We have cr
 ```
 conda env create -f environment.yml
 ```
+If required, these are the necessary packages that can be installed directly on your computer:
+
+```
+ conda install -c conda-forge r-base
+ conda install bioconda::meryl
+ conda install bioconda::hifiasm
+```
