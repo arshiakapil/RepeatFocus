@@ -20,6 +20,6 @@ The resulting assemblies are evaluated using standard assembly quality metrics, 
 This workflow requires the installation of several software packages. We have created a configuration file(yml) that can be activated using conda. Since Nextflow has been selected as the workflow management system, its installation is required prior to running the RepeatFocus pipeline. 
 ```
 function test() {
-  console.log("This code will have a copy button to the right of it");
+  console.log("conda env create -f environment.yml");
 }
 ```
