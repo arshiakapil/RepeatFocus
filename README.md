@@ -28,3 +28,8 @@ If required, these are the necessary packages that can be installed directly on 
  conda install bioconda::meryl
  conda install bioconda::hifiasm
 ```
+
+# Running
+```
+nextflow run
+```
