@@ -1,4 +1,4 @@
-# READme
+# README
 
   The goal of this project is to evaluate the recovery of repetitive sequences from low coverage datasets by developing a reproducible k-mer based filtering pipeline, RepeatFocus. The pipeline is implemented using a Nextflow v24.04.4.5917[11] system to ensure scalability, portability, and reproducibility across computing environments.
 
