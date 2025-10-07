@@ -29,5 +29,5 @@ If required, these are the necessary packages that can be installed directly on 
 
 # Running
 ```
-nextflow run long_read.nf -with-conda -with-report <input directory> <usage output>
+nextflow run long_read.nf -with-conda -with-report <input directory> <usage file>
 ```
