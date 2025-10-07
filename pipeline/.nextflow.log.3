@@ -1,0 +1,121 @@
+Jun-20 12:30:42.329 [main] DEBUG nextflow.cli.Launcher - $> nextflow run long_read.nf -with-report usage_1.html
+Jun-20 12:30:42.715 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Jun-20 12:30:42.741 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/akapil/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Jun-20 12:30:42.755 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-20 12:30:42.757 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-20 12:30:42.760 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jun-20 12:30:42.776 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-20 12:30:42.858 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jun-20 12:30:42.881 [main] DEBUG nextflow.cli.CmdRun - Launching `long_read.nf` [chaotic_sanger] DSL2 - revision: e1dae31630
+Jun-20 12:30:42.882 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-20 12:30:42.883 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-20 12:30:42.951 [main] DEBUG nextflow.Session - Session UUID: c156b3ef-15c2-4ef5-beb4-bc6bac5d5757
+Jun-20 12:30:42.952 [main] DEBUG nextflow.Session - Run name: chaotic_sanger
+Jun-20 12:30:42.953 [main] DEBUG nextflow.Session - Executor pool size: 80
+Jun-20 12:30:42.963 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-20 12:30:42.994 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC (00:05 PDT)
+  System: Linux 6.8.0-60-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21.0.7+6-Ubuntu-0ubuntu124.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 2043159@nedser [127.0.1.1]
+  CPUs: 80 - Mem: 503.5 GB (240.9 GB) - Swap: 14.9 GB (13.7 GB) - Virtual threads ON
+Jun-20 12:30:43.023 [main] DEBUG nextflow.Session - Work-dir: /scratch1/Masters/Arshia/akpk/pipeline/work [ext2/ext3]
+Jun-20 12:30:43.023 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /scratch1/Masters/Arshia/akpk/pipeline/bin
+Jun-20 12:30:43.040 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-20 12:30:43.055 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-20 12:30:43.096 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-20 12:30:43.106 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Jun-20 12:30:43.383 [main] DEBUG nextflow.Session - Session start
+Jun-20 12:30:44.486 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-20 12:30:44.503 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/akapil/.nextflow/secrets/store.json
+Jun-20 12:30:44.512 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7db5b890] - activable => nextflow.secret.LocalSecretsProvider@7db5b890
+Jun-20 12:30:44.521 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `fastqFiles` -- Initialise it to a default value eg. `params.fastqFiles = some_value`
+Jun-20 12:30:44.527 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `kmer_size` -- Initialise it to a default value eg. `params.kmer_size = some_value`
+Jun-20 12:30:44.725 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.725 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.732 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-20 12:30:44.741 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=80; memory=503.5 GB; capacity=80; pollInterval=100ms; dumpInterval=5m
+Jun-20 12:30:44.745 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-20 12:30:44.849 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.850 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.856 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.856 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.865 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.866 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.872 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.872 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.878 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.878 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.884 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.884 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.889 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.889 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.896 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.897 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.906 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.906 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.913 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-20 12:30:44.914 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-20 12:30:44.917 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: quast, kmerCounting, k3_k1_ratio, plot_existence, getthreshold, k3_k2_ratio, plotKmers, convertToFasta, extract_repetitive_reads, filterReadsNew, runGenomeAssembly
+Jun-20 12:30:44.918 [main] DEBUG nextflow.Session - Igniting dataflow network (12)
+Jun-20 12:30:44.925 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > kmerCounting
+Jun-20 12:30:44.925 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > plotKmers
+Jun-20 12:30:44.926 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > getthreshold
+Jun-20 12:30:44.926 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > filterReadsNew
+Jun-20 12:30:44.926 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > plot_existence
+Jun-20 12:30:44.927 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > extract_repetitive_reads
+Jun-20 12:30:44.927 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runGenomeAssembly
+Jun-20 12:30:44.927 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > convertToFasta
+Jun-20 12:30:44.928 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > k3_k1_ratio
+Jun-20 12:30:44.928 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /scratch1/Masters/Arshia/akpk/data/0.1x_coverage/; pattern: *.{fastq,fastq.gz}; options: [:]
+Jun-20 12:30:44.929 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > k3_k2_ratio
+Jun-20 12:30:44.929 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > quast
+Jun-20 12:30:44.930 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_a88e85f1192a1d78: /scratch1/Masters/Arshia/akpk/pipeline/long_read.nf
+Jun-20 12:30:44.930 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-20 12:30:44.930 [main] DEBUG nextflow.Session - Session await
+Jun-20 12:30:45.241 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:30:45.246 [Task submitter] INFO  nextflow.Session - [33/f0a9eb] Submitted process > kmerCounting
+Jun-20 12:30:58.854 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: kmerCounting; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/33/f0a9eb397aa8eb1b3020382d2aa545]
+Jun-20 12:30:58.910 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:30:58.910 [Task submitter] INFO  nextflow.Session - [a0/d10bc8] Submitted process > getthreshold
+Jun-20 12:30:58.920 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:30:58.921 [Task submitter] INFO  nextflow.Session - [5a/34be83] Submitted process > plotKmers
+Jun-20 12:30:59.007 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: getthreshold; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/a0/d10bc86dc0f5a502445cea3fd7c194]
+Jun-20 12:30:59.034 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:30:59.035 [Task submitter] INFO  nextflow.Session - [dc/2ddc27] Submitted process > filterReadsNew
+Jun-20 12:31:00.278 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: plotKmers; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5a/34be834a0314ec0b30e4dd745fe009]
+Jun-20 12:31:43.865 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: filterReadsNew; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/dc/2ddc27794cb9d1e3ba021befd3bbbb]
+Jun-20 12:31:43.891 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:31:43.892 [Task submitter] INFO  nextflow.Session - [d3/4da46f] Submitted process > extract_repetitive_reads
+Jun-20 12:31:43.908 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:31:43.909 [Task submitter] INFO  nextflow.Session - [cf/c4c4aa] Submitted process > plot_existence
+Jun-20 12:31:44.992 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: plot_existence; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/cf/c4c4aaa7f1851d98b7a2a80532e02a]
+Jun-20 12:31:50.162 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: extract_repetitive_reads; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/d3/4da46f232a919c1325f8c175f859d7]
+Jun-20 12:31:50.190 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:31:50.191 [Task submitter] INFO  nextflow.Session - [b1/3f1182] Submitted process > runGenomeAssembly
+Jun-20 12:32:15.496 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: runGenomeAssembly; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/b1/3f1182f89cd3f1ed716d7f3f657c5f]
+Jun-20 12:32:15.557 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:32:15.558 [Task submitter] INFO  nextflow.Session - [1c/37300c] Submitted process > convertToFasta
+Jun-20 12:32:15.658 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: convertToFasta; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/1c/37300cb775800f385dd447f653fdb8]
+Jun-20 12:32:15.681 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:32:15.682 [Task submitter] INFO  nextflow.Session - [73/77fab8] Submitted process > quast
+Jun-20 12:32:15.709 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:32:15.710 [Task submitter] INFO  nextflow.Session - [1a/3e020d] Submitted process > k3_k1_ratio
+Jun-20 12:32:17.123 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: k3_k1_ratio; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/1a/3e020d9172d208ac828d690a61eed4]
+Jun-20 12:32:17.148 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-20 12:32:17.148 [Task submitter] INFO  nextflow.Session - [98/5529ea] Submitted process > k3_k2_ratio
+Jun-20 12:32:18.000 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: quast; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/73/77fab822a5d10f3db92914bdff6292]
+Jun-20 12:32:19.603 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: k3_k2_ratio; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/98/5529ead33b625b0ec4e37a5cf8d4c7]
+Jun-20 12:32:19.612 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-20 12:32:19.705 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-20 12:32:19.705 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-20 12:32:19.708 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jun-20 12:32:19.709 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Jun-20 12:32:19.715 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=11; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1m 38s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Jun-20 12:32:19.715 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Jun-20 12:32:20.853 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-20 12:32:20.968 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jun-20 12:32:20.976 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

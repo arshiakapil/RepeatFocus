@@ -1,0 +1,13 @@
+name: akpk
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - r-ggplot2   
+  - seqkit
+  - quast

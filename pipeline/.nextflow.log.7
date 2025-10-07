@@ -1,0 +1,213 @@
+Jun-18 15:58:31.773 [main] DEBUG nextflow.cli.Launcher - $> nextflow run long_read.nf -with-report usage_40.html
+Jun-18 15:58:32.054 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Jun-18 15:58:32.080 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/akapil/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Jun-18 15:58:32.095 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-18 15:58:32.096 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-18 15:58:32.100 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jun-18 15:58:32.117 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-18 15:58:32.226 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jun-18 15:58:32.252 [main] DEBUG nextflow.cli.CmdRun - Launching `long_read.nf` [shrivelled_faggin] DSL2 - revision: 95c54e77a0
+Jun-18 15:58:32.254 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-18 15:58:32.254 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-18 15:58:32.343 [main] DEBUG nextflow.Session - Session UUID: 849e0e1b-08c7-4c92-acb1-1cd45a84bb37
+Jun-18 15:58:32.344 [main] DEBUG nextflow.Session - Run name: shrivelled_faggin
+Jun-18 15:58:32.346 [main] DEBUG nextflow.Session - Executor pool size: 80
+Jun-18 15:58:32.364 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-18 15:58:32.415 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC (00:05 PDT)
+  System: Linux 6.8.0-60-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21.0.7+6-Ubuntu-0ubuntu124.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 2068855@nedser [127.0.1.1]
+  CPUs: 80 - Mem: 503.5 GB (29.3 GB) - Swap: 14.9 GB (13.5 GB) - Virtual threads ON
+Jun-18 15:58:32.458 [main] DEBUG nextflow.Session - Work-dir: /scratch1/Masters/Arshia/akpk/pipeline/work [ext2/ext3]
+Jun-18 15:58:32.459 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /scratch1/Masters/Arshia/akpk/pipeline/bin
+Jun-18 15:58:32.486 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-18 15:58:32.510 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-18 15:58:32.561 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-18 15:58:32.572 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Jun-18 15:58:35.893 [main] DEBUG nextflow.Session - Session start
+Jun-18 15:58:37.130 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-18 15:58:37.150 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/akapil/.nextflow/secrets/store.json
+Jun-18 15:58:37.162 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7db5b890] - activable => nextflow.secret.LocalSecretsProvider@7db5b890
+Jun-18 15:58:37.174 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `fastqFiles` -- Initialise it to a default value eg. `params.fastqFiles = some_value`
+Jun-18 15:58:37.179 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `kmer_size` -- Initialise it to a default value eg. `params.kmer_size = some_value`
+Jun-18 15:58:37.436 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.437 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.449 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-18 15:58:37.462 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=80; memory=503.5 GB; capacity=80; pollInterval=100ms; dumpInterval=5m
+Jun-18 15:58:37.467 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-18 15:58:37.573 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.573 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.580 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.581 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.591 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.591 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.599 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.600 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.606 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.607 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.615 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.615 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.622 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.622 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.631 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.632 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.646 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.646 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.656 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-18 15:58:37.656 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-18 15:58:37.660 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: quast, kmerCounting, k3_k1_ratio, plot_existence, getthreshold, k3_k2_ratio, plotKmers, convertToFasta, extract_repetitive_reads, filterReadsNew, runGenomeAssembly
+Jun-18 15:58:37.661 [main] DEBUG nextflow.Session - Igniting dataflow network (12)
+Jun-18 15:58:37.670 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > kmerCounting
+Jun-18 15:58:37.671 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > plotKmers
+Jun-18 15:58:37.671 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > getthreshold
+Jun-18 15:58:37.672 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > filterReadsNew
+Jun-18 15:58:37.672 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > plot_existence
+Jun-18 15:58:37.673 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > extract_repetitive_reads
+Jun-18 15:58:37.673 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runGenomeAssembly
+Jun-18 15:58:37.673 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /scratch1/Masters/Arshia/akpk/data/4x_coverage/; pattern: *.{fastq,fastq.gz}; options: [:]
+Jun-18 15:58:37.674 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > convertToFasta
+Jun-18 15:58:37.674 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > k3_k1_ratio
+Jun-18 15:58:37.674 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > k3_k2_ratio
+Jun-18 15:58:37.675 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > quast
+Jun-18 15:58:37.676 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_3480a5772f77b685: /scratch1/Masters/Arshia/akpk/pipeline/long_read.nf
+Jun-18 15:58:37.676 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-18 15:58:37.676 [main] DEBUG nextflow.Session - Session await
+Jun-18 15:58:38.051 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 15:58:38.054 [Task submitter] INFO  nextflow.Session - [80/9156b0] Submitted process > kmerCounting
+Jun-18 16:03:37.609 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: kmerCounting; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/80/9156b09304bf10698cfb71ab49bdc9]
+Jun-18 16:08:37.625 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: kmerCounting; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/80/9156b09304bf10698cfb71ab49bdc9]
+Jun-18 16:12:03.266 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: kmerCounting; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/80/9156b09304bf10698cfb71ab49bdc9]
+Jun-18 16:12:03.369 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 16:12:03.369 [Task submitter] INFO  nextflow.Session - [60/7ce9b9] Submitted process > getthreshold
+Jun-18 16:12:03.385 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 16:12:03.386 [Task submitter] INFO  nextflow.Session - [e3/992dc4] Submitted process > plotKmers
+Jun-18 16:12:03.499 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: getthreshold; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/60/7ce9b93757ad1a38745fb912e243b5]
+Jun-18 16:12:03.523 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 16:12:03.523 [Task submitter] INFO  nextflow.Session - [e0/e2305e] Submitted process > filterReadsNew
+Jun-18 16:12:04.760 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: plotKmers; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/e3/992dc45cacd443210562c65b6d1498]
+Jun-18 16:13:37.703 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: filterReadsNew; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/e0/e2305ed0bc0157f746549d29b3b2d2]
+Jun-18 16:18:37.727 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: filterReadsNew; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/e0/e2305ed0bc0157f746549d29b3b2d2]
+Jun-18 16:23:37.818 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: filterReadsNew; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/e0/e2305ed0bc0157f746549d29b3b2d2]
+Jun-18 16:28:37.849 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: filterReadsNew; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/e0/e2305ed0bc0157f746549d29b3b2d2]
+Jun-18 16:33:37.939 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: filterReadsNew; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/e0/e2305ed0bc0157f746549d29b3b2d2]
+Jun-18 16:38:37.956 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: filterReadsNew; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/e0/e2305ed0bc0157f746549d29b3b2d2]
+Jun-18 16:43:38.017 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: filterReadsNew; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/e0/e2305ed0bc0157f746549d29b3b2d2]
+Jun-18 16:48:38.081 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: filterReadsNew; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/e0/e2305ed0bc0157f746549d29b3b2d2]
+Jun-18 16:51:06.767 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: filterReadsNew; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/e0/e2305ed0bc0157f746549d29b3b2d2]
+Jun-18 16:51:06.785 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 16:51:06.786 [Task submitter] INFO  nextflow.Session - [08/6e7d4f] Submitted process > extract_repetitive_reads
+Jun-18 16:51:06.793 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 16:51:06.794 [Task submitter] INFO  nextflow.Session - [bb/728223] Submitted process > plot_existence
+Jun-18 16:51:10.262 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: plot_existence; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/bb/72822345a148a1b9529f36dab7b082]
+Jun-18 16:53:38.149 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: extract_repetitive_reads; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/08/6e7d4ff904f508464908512d6fc8e4]
+Jun-18 16:58:38.231 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: extract_repetitive_reads; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/08/6e7d4ff904f508464908512d6fc8e4]
+Jun-18 16:59:40.489 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: extract_repetitive_reads; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/08/6e7d4ff904f508464908512d6fc8e4]
+Jun-18 16:59:40.517 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 16:59:40.518 [Task submitter] INFO  nextflow.Session - [5d/116399] Submitted process > runGenomeAssembly
+Jun-18 17:03:38.235 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:08:38.299 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:13:38.341 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:18:38.393 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:23:38.433 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:28:38.469 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:33:38.500 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:38:38.532 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:43:38.564 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:48:38.573 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:53:38.666 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 17:58:38.762 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:03:38.848 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:08:38.936 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:13:39.025 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:18:39.038 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:23:39.132 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:28:39.134 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:33:39.232 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:38:39.323 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:43:39.412 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:48:39.507 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:53:39.564 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 18:58:39.599 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:03:39.664 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:08:39.724 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:13:39.797 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:18:39.859 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:23:39.900 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:28:39.935 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:33:39.974 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:38:40.013 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:43:40.048 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:48:40.086 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: runGenomeAssembly; status: RUNNING; exit: -; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:52:16.168 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: runGenomeAssembly; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/1163992969b3aa150915d908fbdbc7]
+Jun-18 19:52:16.217 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 19:52:16.218 [Task submitter] INFO  nextflow.Session - [98/0fc839] Submitted process > convertToFasta
+Jun-18 19:52:16.521 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: convertToFasta; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/98/0fc839f87c6f148a3f5e47decf430b]
+Jun-18 19:52:16.539 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 19:52:16.539 [Task submitter] INFO  nextflow.Session - [91/804258] Submitted process > quast
+Jun-18 19:52:16.553 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 19:52:16.553 [Task submitter] INFO  nextflow.Session - [fb/57ab47] Submitted process > k3_k1_ratio
+Jun-18 19:52:22.355 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: k3_k1_ratio; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/fb/57ab471918211bd6cc63ceb9c6cbf1]
+Jun-18 19:52:22.376 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-18 19:52:22.376 [Task submitter] INFO  nextflow.Session - [5d/e86f30] Submitted process > k3_k2_ratio
+Jun-18 19:52:23.339 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: quast; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/91/8042584cf6b4a7c192391b1d5829a5]
+Jun-18 19:52:53.226 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: k3_k2_ratio; status: COMPLETED; exit: 0; error: -; workDir: /scratch1/Masters/Arshia/akpk/pipeline/work/5d/e86f30484ee86e6e291b0d02150922]
+Jun-18 19:52:53.235 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-18 19:52:53.328 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-18 19:52:53.328 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-18 19:52:53.338 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jun-18 19:52:53.338 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Jun-18 19:52:53.353 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=11; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=3h 54m 26s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Jun-18 19:52:53.353 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Jun-18 19:52:54.527 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-18 19:52:54.589 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jun-18 19:52:54.590 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
