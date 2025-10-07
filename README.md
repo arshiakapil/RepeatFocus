@@ -28,6 +28,7 @@ If required, these are the necessary packages that can be installed directly on 
 ```
 
 # Running
+Run nextflow on the command line with the -with-conda and -with-report features to ensure smooth running of the pipeline and to create assembly metrics in the <usage file> specified by you.
 ```
 nextflow run long_read.nf -with-conda -with-report <input directory> <usage file>
 ```
