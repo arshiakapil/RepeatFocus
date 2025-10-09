@@ -37,7 +37,7 @@ To evaluate whether the RepeatFocus pipeline effectively recovers repetitive seq
 * Breadth of coverage
 * Depth of Coverage
 * Total recovered size of repeats
-* Composition of recovered repeats
+* Composition of recovered repeats in comparison to reference
 
 The human genome was selected for validation due to its extensive study over the past two decades and the availability of detailed annotations, particularly for repetitive regions. The CHM13 assembly was chosen as it expands upon the GRCh38 reference by completing previously unresolved regions of the genome. However, if you choose to use your own data for validation, the pipeline will still work.
 
