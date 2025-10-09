@@ -33,7 +33,11 @@ Run nextflow on the command line with the -with-conda and -with-report features 
 nextflow run long_read.nf -with-conda -with-report <input directory> <usage file>
 ```
 # Validation
-To evaluate whether the RepeatFocus pipeline effectively recovers repetitive sequences from low-coverage datasets, a series of validation metrics were calculated. These metrics were designed to assess both the presence and completeness of repetitive elements in the assembled contigs across varying coverage depths(Follow wiki page to understand how to retrieve subsampled data). 
+To evaluate whether the RepeatFocus pipeline effectively recovers repetitive sequences from low-coverage datasets, a series of validation metrics were calculated. These metrics were designed to assess both the presence and completeness of repetitive elements in the assembled contigs across varying coverage depths(Follow wiki page to understand how to retrieve subsampled data). Validation metrics include:
+* Breadth of coverage
+* Depth of Coverage
+* Total recovered size of repeats
+* Composition of recovered repeats
 
 The human genome was selected for validation due to its extensive study over the past two decades and the availability of detailed annotations, particularly for repetitive regions. The CHM13 assembly was chosen as it expands upon the GRCh38 reference by completing previously unresolved regions of the genome. However, if you choose to use your own data for validation, the pipeline will still work.
 
